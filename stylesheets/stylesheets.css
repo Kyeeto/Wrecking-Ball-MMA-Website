@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 700;
+}
+
+h2{
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 300;
+}
+
+.desktop-nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.desktop-nav a{
+    display: block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: #ffffffd0
+}
+
+.desktop-nav a:hover{
+    background-color: #3a3a3a;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+header{
+    background-color: #111111;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 3px solid #580808;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    padding-top: 80px;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("..images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.classes{
+    background-color: #2a2a2a;
+}
+
+.classes h3{
+    background-color: #3a3a3a;
+    border-top: 3px solid #580808;
+}
+
+.kids{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("..images/kids-index.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sign-up{
+    background-color: #ca0101a1;
+}
+
+.contact-info{
+    background-color: #3a3a3a;
+}
+
+.contact-info a{
+    width: 50px;
+    height: 50px;
+}

@@ -3,7 +3,9 @@ Website for Wrecking Ball MMA, Gurnee, IL
 
 
 Images Needed:
-    Wrecking Ball Logo, all pages
-    Index.html - Hero Background and kids image
+    Wrecking Ball Logo in header, all pages
     classes.html - Fill in Judo and Wrestling Descriptions
-    contact.html - default image at the top
+    contact.html - hero image at the top
+
+    stylesheets.css, index page - Hero Background and kids image
+    stylesheets.css - widths, heigths
