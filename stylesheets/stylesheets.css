@@ -25,7 +25,7 @@ h3{
     display: block;
     padding: 10px 20px; 
     text-decoration: none;
-    color: #ffffffd0;
+    color: #ffffff;
 }
 .desktop-nav a:hover{
     background-color: #3a3a3a;
@@ -41,8 +41,8 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
-    border-bottom: 3px solid #580808;
+    height: 100px;
+    border-bottom: 3px solid #c0392b ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,6 +53,10 @@ main{
 }
 a:visited{
     color: inherit;
+}
+.logo {
+    height: 90px;
+    width: 90px;
 }
 
 
@@ -79,7 +83,7 @@ a:visited{
     color: rgb(211, 211, 211);
 }
 .hero-red{
-    color: rgb(230, 60, 60);
+    color: #c0392b;
 }
 .hero-buttons{
     display: flex;
@@ -87,11 +91,11 @@ a:visited{
     gap: 50px;
 }
 .hero-schedule{
-    background-color: rgb(230, 60, 60);
+    background-color: #c0392b;
     color: white;
     font-size: 30px;
     font-weight: bold;
-    border: 4px solid rgb(230, 60, 60);
+    border: 4px solid #c0392b ;
     transition: background-color 0.3s ease;
     white-space: nowrap;
     display: inline-block;
@@ -110,7 +114,7 @@ a:visited{
 }
 .hero-schedule:hover{
     background-color: rgba(255, 255, 255, 0.20);
-    color: rgb(230, 60, 60);
+    color: #c0392b ;
 }
 .hero-join:hover{
     background-color: rgba(255, 255, 255, 0.20);
@@ -120,7 +124,7 @@ a:visited{
 
 
 .classes{
-    background-color: #2a2a2a;
+    background: linear-gradient(to bottom right, #000000, #3a3a3a, #c0392b );
     display: grid;
     grid-template-columns: repeat(3, 450px);
     justify-content: center;
@@ -155,7 +159,7 @@ a:visited{
 }
 .class-card{
     background-color: #3a3a3a;
-    border-top: 5px solid rgb(230, 60, 60);
+    border-top: 5px solid #c0392b ;
     padding: 30px 20px;
     display: flex;  
     flex-direction: column;
@@ -186,6 +190,11 @@ a:visited{
 .class-card:hover{
     transform: translateY(-10px);
 }
+@media (max-width: 1200px){
+    .classes{
+        grid-template-columns: repeat(2, 450px);
+    }
+}
 @media (max-width: 768px){
     .classes{
         grid-template-columns: 1fr;
@@ -193,22 +202,181 @@ a:visited{
 }
 
 
+
+
 .kids{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/kids-index.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/kids-index.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 80vh;
 }
+.kids h2{
+    text-align: left;
+    font-size: 80px;
+    padding-left: clamp(20px, 5%, 80px);
+    color: white;
+    font-weight: 700;
+}
+.kids h2:first-of-type{
+    padding-top: 80px;
+}
+.red-kids{
+    color: #c0392b ;
+}
+.kids p{
+    padding-top: 50px;
+    font-size: 25px;
+    color: #c0392b ;
+    font-weight: 700;
+    padding-left: clamp(20px, 5%, 80px);
+}
+.kids a{
+    text-decoration: none;
+}
+.enroll-now{
+    background-color: #c0392b;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 20px 40px;
+}
+.more-info{
+    background-color: rgba(0, 0, 0) ;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    border: 4px solid rgb(255, 255, 255);
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+.enroll-now:hover{
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.more-info:hover{
+    background-color: rgba(255, 255, 255, 0.50);
+}
+.kids-buttons{
+    display: flex;
+    padding-left: clamp(200px, 5%, 80px);
+    gap: 50px;
+    padding-top: 50px
+}
+
+
 
 .sign-up{
-    background-color: #ca0101a1;
-}
-
-.contact-info{
     background-color: #3a3a3a;
+    text-align: center;
+    padding-bottom: 100px;
+    overflow: visible;
+    border-top: 3px solid white;
+}
+.sign-up h2{
+    font-size: 80px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.sign-up a {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: white;
+    color: black !important;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+.sign-up a::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 50%;
+    height: 200%;
+    background: rgb(255, 0, 0);
+    transform: skewX(-20deg);
+    animation: shimmer 4s infinite;
+}
+@keyframes shimmer {
+    0% { left: -75%; }
+    100% { left: 125%; }
 }
 
-.contact-info img{
-    width: 50px;
-    height: 50px;
+footer {
+    background-color: #111111;
+    border-top: 3px solid rgb(230, 60, 60);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+}
+
+.footer-brand h2 {
+    color: rgb(230, 60, 60);
+    font-size: 30px;
+    max-width: 150px;
+}
+
+.footer-brand p {
+    color: #888888;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.footer-socials img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-col h4 {
+    color: rgb(230, 60, 60);
+    font-size: 16px;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-col p {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    border-top: 1px solid #333333;
+    color: #888888;
+    font-size: 14px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-bottom-links a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.footer-bottom-links a:hover {
+    color: white;
 }
