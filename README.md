@@ -17,4 +17,6 @@ Things Needed:
     contact.html - hero image at the top
 
     stylesheets.css, index page - Hero Background and kids image
-    stylesheets.css - widths, heigths
+    stylesheets.css - widths, height
+
+    Wrecking ball mobile logo

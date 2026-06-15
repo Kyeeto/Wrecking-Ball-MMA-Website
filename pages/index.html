@@ -7,10 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <a href = "index.html"><img class = "logo" src = "../images/wrecking-ball-logo.webp" alt = "Wrecking Ball MMA Logo"></a>
+            <span class="mobile-title"><img src = "../images/mobile-nav-text"></span>
             <button class = "hamburger">☰</button>
             <nav class = "mobile-nav">
                 <ul>
@@ -34,21 +36,21 @@
             </nav>
         </header>
         <main>
-            <section class = "hero">
-                <h1>WRECKING BALL <span class = "hero-red">MMA</span></h1>
-                    <p>The Midwest's Premier Mixed Martial Arts Training Facility. <br>
+            <section class = "hero" >
+                <h1 data-aos = "fade-down" data-aos-delay = "300" data-aos-duration = "500">WRECKING BALL <span class = "hero-red">MMA</span></h1>
+                    <p data-aos = "fade-down" data-aos-delay = "300" data-aos-duration = "500">The Midwest's Premier Mixed Martial Arts Training Facility. <br>
                     We offer a wide array of classes on every day of the week</p>
-                    <div class = "hero-buttons">
+                    <div class = "hero-buttons" data-aos = "fade-down" data-aos-delay = "300" data-aos-duration = "500">
                         <a href = "schedule.html" class = "hero-schedule">SEE SCHEDULE</a>
                         <a href = "contact.html" class = "hero-join">JOIN NOW</a>
                     </div>
             </section>
 
-            <section class = "classes">
-                <span class = "class-header">
+            <section class = "classes" data-aos = "fade-up" data-aos-delay = "300" data-aos-duration = "500">
+                <div class = "class-header" id = "class-header" data-aos = "fade-up">
                     <p class = "train-with-us">TRAIN WITH US</p>
                     <h2>OUR CLASSES</h2>
-                </span>
+                </div>
 
                 <a href = "classes.html#muay-thai" class = "class-card">
                 <h3>MUAY THAI</h3>
@@ -71,7 +73,7 @@
                 <a href = "classes.html#wrestling" class = "class-card">
                 <h3>WRESTLING</h3>
                     <p>A sport focused on controlling your opponent through takedowns, throws, and pins.</p>
-                    <img src = "../images/wrestling.webp" alt = "Wrestling">
+                    <img src = "../images/wrestling.webp" alt = "Wrestling" >
                 </a>
 
                 <a href = "classes.html#judo" class = "class-card">
@@ -80,14 +82,14 @@
                     <img src = "../images/judo.jpg" alt = "Judo">
                 </a>
 
-                <a href = "classes.html#mma" class = "class-card">
+                <a href = "classes.html#mma" class = "class-card"">
                 <h3>MIXED MARTIAL ARTS - MMA</h3>
                     <p>Combine striking and grappling into a complete system. </p>
                     <img src = "../images/mma.jpg" alt = "Mixed Martial Arts">
                 </a>
             </section>
 
-            <section class = "kids">
+            <section class = "kids" data-aos = "fade-up" data-aos-delay = "200" data-aos-duration = "700">
                 <h2><span class = "red-kids"> Kids</span></h2> 
                 <h2>Classes</h2>
                 <p>Wrecking Ball's MMA kids program teaches Jiu Jutsu and <br>
@@ -143,5 +145,7 @@
                 </div>
             </footer>
         </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../scripts/main.js"></script>
     </body>
 </html>

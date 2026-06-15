@@ -7,10 +7,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <a href = "index.html"><img class = "logo" src = "../images/wrecking-ball-logo.webp" alt = "Wrecking Ball MMA Logo"></a>
+            <span class="mobile-title"><img src = "../images/mobile-nav-text"></span>
             <button class = "hamburger">☰</button>
             <nav class = "mobile-nav">
                 <ul>
@@ -33,70 +35,89 @@
                 </ul>
             </nav>
         </header>
-
         <main>
-            <section class = "contact-us">
-                <img href = " " alt = "default-image">
-                <h2>Contact Us</h2>
-                <p>For all inquiries about Wrecking Ball MMA, or interest in membership, please call us at 224-637-3329
-                or fill out the following fields and send us a message!
-                </p>
-
-                <form>
-                    <label for = "first-name">First Name</label>
-                    <input type = "text" id = "first-name" name = "first-name" placeholder = "John">
-
-                    <label for = "last-name">Last Name</label>
-                    <input type = "text" id = "last-name" name = "last-name" placeholder = "Doe">
-
-                    <label for = "email">Email</label>
-                    <input type = "email" id = "email" name = "email" placeholder = "johndoe@gmail.com">
-
-                    <label for = "phone">Phone Number</label>
-                    <input pattern = "[0-9]{10}" type = "tel" id = "phone" name = "phone" placeholder = "123 456-7890">
-
-                    <label for = "message">Message</label>
-                    <textarea id = "message" name = "message" placeholder = "Enter Message Here..." ></textarea>
-
-                    <button type = "submit">Send Message</button>
-                </form>
+            <section class="contact-hero">
+                <h1>GET IN <span class="red">TOUCH</span></h1>
+                <p>Have a question or ready to start training? We'd love to hear from you.</p>
             </section>
-            <footer>
-                <div class="footer-main">
-                    <div class="footer-brand">
-                        <h2>WRECKING BALL MMA</h2>
-                        <p>GURNEE, ILLINOIS</p>
-                        <div class="footer-socials">
-                            <a href="https://www.instagram.com/wreckingballmma/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/wreckingballmma/" target="_blank"><img src="../images/Facebook_icon.png" alt="Facebook"></a>
-                        </div>
-                    </div>
+            <section class="contact-content">
+                <div class="contact-form-box">
+                    <h2>SEND US A MESSAGE</h2>
+                    <form>
+                        <label for = "first-name">First Name</label>
+                            <input type = "text" id = "first-name" name = "first-name" placeholder = "John">
 
-                    <div class="footer-col">
-                        <h4>ADDRESS</h4>
-                        <p>905 Lakeside Dr. Unit 3</p>
-                        <p>Gurnee, IL 60031</p>
-                    </div>
+                            <label for = "last-name">Last Name</label>
+                            <input type = "text" id = "last-name" name = "last-name" placeholder = "Doe">
 
-                    <div class="footer-col">
-                        <h4>CONTACT</h4>
-                        <p>(224) 637-3329</p>
-                    </div>
+                            <label for = "email">Email</label>
+                            <input type = "email" id = "email" name = "email" placeholder = "johndoe@gmail.com">
 
-                    <div class="footer-col">
-                        <h4>HOURS</h4>
-                        <p>Mon - Fri: 6am - 9pm</p>
-                        <p>Sat - Sun: 9am - 2pm</p>
+                            <label for = "phone">Phone Number</label>
+                            <input pattern = "[0-9]{10}" type = "tel" id = "phone" name = "phone" placeholder = "123 456-7890">
+
+                            <label for = "message">Message</label>
+                            <textarea id = "message" name = "message" placeholder = "Enter Message Here..." ></textarea>
+
+                            <button type = "submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info-box">
+                    <h2>CONTACT INFO</h2>
+                    <p><span class="red">ADDRESS</span></p>
+                    <p>905 Lakeside Dr. Unit 3, Gurnee, IL 60031</p>
+
+                    <p><span class="red">PHONE</span></p>
+                    <p>(224) 637-3329</p>
+
+                    <p><span class="red">HOURS</span></p>
+                    <p>Mon - Fri: 6am - 9pm</p>
+                    <p>Sat - Sun: 9am - 2pm</p>
+
+                    <div class="contact-socials">
+                        <a href="https://www.instagram.com/wreckingballmma/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/wreckingballmma/" target="_blank"><img src="../images/Facebook_icon.png" alt="Facebook"></a>
                     </div>
                 </div>
-
-                <div class="footer-bottom">
-                    <p>© 2024 <span class="red">Wrecking Ball MMA</span>. All rights reserved.</p>
-                    <div class="footer-bottom-links">
-                        <a href="contact.html">CONTACT</a>
-                    </div>
-                </div>
-            </footer>
+            </section>
         </main>
+        <footer>
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h2>WRECKING BALL MMA</h2>
+                    <p>GURNEE, ILLINOIS</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/wreckingballmma/" target="_blank"><img src="../images/Instagram_icon.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/wreckingballmma/" target="_blank"><img src="../images/Facebook_icon.png" alt="Facebook"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>ADDRESS</h4>
+                    <p>905 Lakeside Dr. Unit 3</p>
+                    <p>Gurnee, IL 60031</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>CONTACT</h4>
+                    <p>(224) 637-3329</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>HOURS</h4>
+                    <p>Mon - Fri: 6am - 9pm</p>
+                    <p>Sat - Sun: 9am - 2pm</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 <span class="red">Wrecking Ball MMA</span>. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="../scripts/main.js"></script>
     </body>
 </html>
