@@ -43,23 +43,28 @@
             <section class="contact-content">
                 <div class="contact-form-box">
                     <h2>SEND US A MESSAGE</h2>
-                    <form>
+                    <form novalidate>
                         <label for = "first-name">First Name</label>
-                            <input type = "text" id = "first-name" name = "first-name" placeholder = "John">
+                        <input type = "text" id = "first-name" name = "first-name" placeholder = "John">
+                        <span class = "error-msg" id = "first-name-error"></span>
 
-                            <label for = "last-name">Last Name</label>
-                            <input type = "text" id = "last-name" name = "last-name" placeholder = "Doe">
+                        <label for = "last-name">Last Name</label>
+                        <input type = "text" id = "last-name" name = "last-name" placeholder = "Doe">
+                        <span class = "error-msg" id = "last-name-error"></span>
 
-                            <label for = "email">Email</label>
-                            <input type = "email" id = "email" name = "email" placeholder = "johndoe@gmail.com">
+                        <label for = "email">Email</label>
+                        <input type = "email" id = "email" name = "email" placeholder = "johndoe@gmail.com">
+                        <span class = "error-msg" id = "email-error"></span>
 
-                            <label for = "phone">Phone Number</label>
-                            <input pattern = "[0-9]{10}" type = "tel" id = "phone" name = "phone" placeholder = "123 456-7890">
+                        <label for = "phone">Phone Number</label>
+                        <input pattern = "[0-9]{10}" type = "tel" id = "phone" name = "phone" placeholder = "123 456-7890">
+                        <span class = "error-msg" id = "phone-error"></span>
 
-                            <label for = "message">Message</label>
-                            <textarea id = "message" name = "message" placeholder = "Enter Message Here..." ></textarea>
+                        <label for = "message">Message</label>
+                        <textarea id = "message" name = "message" placeholder = "Enter Message Here..." ></textarea>
+                        <span class = "error-msg" id = "message-error"></span>
 
-                            <button type = "submit">Send Message</button>
+                        <button type = "submit">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info-box">
