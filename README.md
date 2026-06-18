@@ -26,3 +26,19 @@ Coming soon
 - Schedule
 - Memberships
 - Contact
+
+
+## Running Locally 
+1. Clone the repo
+    git clone https://github.com/your-username/Wrecking-Ball-MMA-Website.git
+
+2. Install dependencies
+    npm install
+
+3. Create a '.env' file in the root folder
+    RESEND_API_KEY = your_api_key_here
+
+4. Start the server
+    node server.js
+
+5. Open 'pages/index.html' in your browser
