@@ -218,11 +218,12 @@ a:visited{
 .classes{
     background: linear-gradient(to bottom right, #000000, #3a3a3a, #c0392b );
     display: grid;
-    grid-template-columns: repeat(3, 450px);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     column-gap: 150px;
     row-gap: 50px;
     padding: 40px;
+    margin: 0 auto;
 }
 .classes h3{
     font-size: 30px;
@@ -291,7 +292,7 @@ a:visited{
 }
 @media (max-width: 1200px){
     .classes{
-        grid-template-columns: repeat(2, 450px);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (max-width: 768px){
